@@ -84,7 +84,7 @@ export default function GymTracker({ setPage }) {
     <div style={{ minHeight: "100vh", backgroundColor: "#0a0a0a", padding: "30px", color: "#eee" }}>
       {/* HEADER */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "30px" }}>
-        <h1 style={{ fontSize: "2.8rem" }}>💪 Gym Tracking</h1>
+        <h1 style={{ fontSize: "2.8rem" }}>Gym Tracking</h1>
         <button
           onClick={() => setPage("landing")}
           style={{
@@ -124,7 +124,7 @@ export default function GymTracker({ setPage }) {
               onClick={addBodyWeight}
               style={{
                 padding: "15px 30px",
-                background: "#ff4d4d",
+                background: "#2c75ce",
                 color: "#fff",
                 border: "none",
                 borderRadius: "8px",
@@ -240,7 +240,7 @@ export default function GymTracker({ setPage }) {
                 <polyline
                   points={graphPoints.map(p => `${p.x + 20},${p.y + 20}`).join(" ")}
                   fill="none"
-                  stroke="#ff4d4d"
+                  stroke="#3565bd"
                   strokeWidth="4"
                   strokeLinejoin="round"
                   strokeLinecap="round"
@@ -248,7 +248,7 @@ export default function GymTracker({ setPage }) {
                 {/* Dots + labels */}
                 {graphPoints.map((p, i) => (
                   <g key={i}>
-                    <circle cx={p.x + 20} cy={p.y + 20} r="6" fill="#ff4d4d" />
+                    <circle cx={p.x + 20} cy={p.y + 20} r="6" fill="#e2e7ff" />
                     <text
                       x={p.x + 20}
                       y={p.y + 10}

@@ -6,7 +6,7 @@ export default function LandingPage({ setPage }) {
 
   useEffect(() => {
     const t1 = setTimeout(() => setFadeOut(true), 2000); // start fade out
-    const t2 = setTimeout(() => setHidden(true), 3200);  // remove overlay
+    const t2 = setTimeout(() => setHidden(true), 3200); // remove overlay
 
     return () => {
       clearTimeout(t1);
@@ -52,14 +52,13 @@ export default function LandingPage({ setPage }) {
               color: "#ffffff",
             }}
           >
-            WE'RE ALL GONNA{" "}
-            <span style={{ color: "#4d74ff" }}>MAKE IT</span>
+            WE'RE ALL GONNA <span style={{ color: "#4d74ff" }}>MAKE IT</span>
           </h2>
         </div>
       )}
 
       {/* Main Page */}
-      <div  
+      <div
         style={{
           minHeight: "100vh",
           backgroundColor: "#0a0a0a",
@@ -71,15 +70,33 @@ export default function LandingPage({ setPage }) {
           padding: "40px 20px",
         }}
       >
-        <h1 style={{ fontSize: "4.5rem", fontWeight: "bold", marginBottom: "20px" }}>
+        <h1
+          style={{
+            fontSize: "4.5rem",
+            fontWeight: "bold",
+            marginBottom: "20px",
+          }}
+        >
           Gym<span style={{ color: "#4d74ff" }}>Link</span>
         </h1>
 
-        <p style={{ fontSize: "1.8rem", color: "#bbbbbb", marginBottom: "80px" }}>
-          Track your gains.<br />Connect with the community.
+        <p
+          style={{ fontSize: "1.8rem", color: "#bbbbbb", marginBottom: "80px" }}
+        >
+          Track your gains.
+          <br />
+          Connect with the community.
         </p>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "25px", width: "100%", maxWidth: "420px" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "25px",
+            width: "100%",
+            maxWidth: "420px",
+          }}
+        >
           <button
             onClick={() => setPage("gym")}
             style={{
@@ -88,7 +105,7 @@ export default function LandingPage({ setPage }) {
               fontWeight: "600",
               border: "none",
               borderRadius: "16px",
-              background: "linear-gradient(135deg, #ffffff, #4f59c9)",
+              background: "linear-gradient(135deg, #8b90b7, #4f59c9)",
               color: "white",
               cursor: "pointer",
             }}
@@ -104,12 +121,27 @@ export default function LandingPage({ setPage }) {
               fontWeight: "600",
               border: "none",
               borderRadius: "16px",
-              background: "linear-gradient(135deg, #4d79ff, #e8df8c)",
+              background: "linear-gradient(135deg, #7178b3, #4f59c9)",
               color: "white",
               cursor: "pointer",
             }}
           >
             Community Chat
+          </button>
+          <button
+            onClick={() => setPage("mirin")}
+            style={{
+              padding: "30px",
+              fontSize: "1.8rem",
+              fontWeight: "600",
+              border: "none",
+              borderRadius: "16px",
+              background: "linear-gradient(135deg, #3d3a7c, #5c4dff)",
+              color: "white",
+              cursor: "pointer",
+            }}
+          >
+            Mirin' Page
           </button>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default function MirinPage({ setPage }) {
       user: "Zyzz",
       caption: "Mirin' these gains?",
       image:
-        "/zyzz1.png",
+        "../public/zyzz1.jpg",
       likes: 420,
       timestamp: "2 hours ago",
     },
@@ -16,7 +16,7 @@ export default function MirinPage({ setPage }) {
       user: "ZyzzLegacy",
       caption: "Aesthetic is everything",
       image:
-        "/zyzz2.png",
+        "../public/zyzz2.jpg",
       likes: 289,
       timestamp: "Yesterday",
     },
@@ -24,7 +24,7 @@ export default function MirinPage({ setPage }) {
       id: 3,
       user: "ShreddedAngel",
       caption: "Just hit a new PR, feeling unstoppable",
-      image: "/zyzz3.png",
+      image: "../public/zyzz3.webp",
       likes: 156,
       timestamp: "3 days ago",
     },

@@ -5,8 +5,8 @@ export default function LandingPage({ setPage }) {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const t1 = setTimeout(() => setFadeOut(true), 2000); // start fade out
-    const t2 = setTimeout(() => setHidden(true), 3200); // remove overlay
+    const t1 = setTimeout(() => setFadeOut(true), 2000);
+    const t2 = setTimeout(() => setHidden(true), 3200);
 
     return () => {
       clearTimeout(t1);
@@ -128,6 +128,7 @@ export default function LandingPage({ setPage }) {
           >
             Community Chat
           </button>
+
           <button
             onClick={() => setPage("mirin")}
             style={{
@@ -142,6 +143,23 @@ export default function LandingPage({ setPage }) {
             }}
           >
             Mirin' Page
+          </button>
+
+          {/* Fixed Login Button */}
+          <button
+            onClick={() => setPage("login")}
+            style={{
+              padding: "30px",
+              fontSize: "1.8rem",
+              fontWeight: "600",
+              border: "none",
+              borderRadius: "16px",
+              background: "linear-gradient(135deg, #22c55e, #16a34a)",
+              color: "white",
+              cursor: "pointer",
+            }}
+          >
+            Login
           </button>
         </div>
       </div>

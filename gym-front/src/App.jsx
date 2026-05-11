@@ -5,6 +5,7 @@ import GymTracker from "./components/GymTracker.jsx";
 import ChatApp from "./components/ChatApp.jsx";
 import MirinPage from "./components/MirinPage.jsx";
 import Login from "./components/Login.jsx";
+import Guide from "./components/Guide.jsx";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("landing");
@@ -52,6 +53,14 @@ function App() {
 
       {currentPage === "mirin" && (
         <MirinPage 
+          setPage={setCurrentPage} 
+          user={user}
+          onLogout={handleLogout}
+        />
+      )}
+
+      {currentPage === "guide" && (
+        <Guide 
           setPage={setCurrentPage} 
           user={user}
           onLogout={handleLogout}

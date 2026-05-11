@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css';   // Change if you moved the CSS
+import './login.css';   // Change if you moved the CSS
 
 const Login = ({ setPage, onLoginSuccess }) => {
   const [email, setEmail] = useState('');

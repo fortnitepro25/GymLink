@@ -161,7 +161,26 @@ export default function LandingPage({ setPage }) {
           >
             Login
           </button>
+
+
+          <button 
+          onClick={() => setPage("guide")}
+          style={{
+            padding: "30px",
+            fontSize: "1.8rem",
+            fontWeight: "600",
+            border: "none",
+            borderRadius: "16px",
+            background: "linear-gradient(135deg, #8b90b7, #4f59c9)",
+            color: "white",
+            cursor: "pointer",
+          }}
+        >
+          Guide
+        </button>
         </div>
+
+        
       </div>
     </>
   );

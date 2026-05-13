@@ -1,15 +1,11 @@
-README – Gymlink
+Gymlink
 Projektin tekijät
-
 
 Jooa
 
-
 Renato
 
-
 Henry
-
 
 Onni
 
@@ -68,7 +64,12 @@ AI-työkalut apuna kehityksessä
 
 
 👥 Vastuut ryhmätyössä
-Tämä osio täytetään myöhemmin ryhmän toimesta.
+Projektin vastuut ovat:
+
+Renato: JavaScript, HTML.
+Onni: React, CSS.
+Henry: JavaScript, React, CSS, HTML, JSON.
+Jooa: JavaScript, React, CSS, HTML, JSON.
 
 ⭐ Tärkeimmät ominaisuudet
 
@@ -93,7 +94,7 @@ Selkeä ja motivoiva käyttöliittymä saliharrastajille
 
 
 📚 Mitä opimme projektissa
-Projektin aikana opimme:
+Projektin aikana opimme: 
 
 
 kuinka ryhmätyö ohjelmointiprojektissa toimii
@@ -112,6 +113,7 @@ kuinka tärkeässä roolissa kommentointi ja selkeä koodirakenne ovat
 
 
 Projektin aikana kehityimme myös Reactin ja verkkosovellusten rakentamisen kanssa.
+
 
 🚀 Asennus ja käynnistysohjeet
 
